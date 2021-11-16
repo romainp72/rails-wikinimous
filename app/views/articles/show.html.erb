@@ -1,0 +1,11 @@
+<h2> Article : <%= @article.title %></h2>
+<p> Inside your article : "<%= @article.content %>"<br></p>
+<h3> <br> Article related music : </h3>
+<p> Band: <%= @article.band %></p>
+<p> Music genre : <%= @article.genre %></p>
+<p> Main instrument : <%= @article.instrument %></p>
+
+
+<%= link_to "Edit article", edit_article_path(@article), class:"btn btn-primary"%>
+<br>
+<%= link_to "Back to articles list", articles_path %>
